@@ -1,5 +1,4 @@
 
-
 function addperson(){
     
     let ninumber1 = document.getElementById('1').value;
@@ -25,8 +24,9 @@ function addperson(){
                     alert("Missing department");
                 }else {
                     records.push({ninumber:ninumber1, fullname:fullname1,phone:phone1,address:address1,department:department1});
-                    loadEmployeeTable(records);
-                    alert("now how do we edit");
+                   currentRecords = records;
+				   document.location="HR_Application.html";
+                    alert("WORKING");
                 }
             }
         }
@@ -65,4 +65,4 @@ function addperson(){
     //                 }
 //     tableBody1.innerHTML = newPerson;
 
-// 
+//
