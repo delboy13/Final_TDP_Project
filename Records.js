@@ -1,7 +1,7 @@
 // When window opens the function is called and then looks at rest of code -- cannot find variables yet if not onloaded
 window.onload = () => {
-    loadEmployeeTable(records)
-    addperson;
+    loadEmployeeTable()
+    // addperson;
     // deleteperson;
 };
 //query can put this data in seperate file and refer to it and how?
@@ -19,13 +19,15 @@ window.onload = () => {
 
 //A Function to add data to <tbody> -- creating the table reactive to the records.
 //tablebody is a variable get <tbody> and append the string variable of each record
-function loadEmployeeTable(anythingArray) {
-var test = currentRecord;
+function loadEmployeeTable(anythingArray) {   
+
+var test = JSON.parse(sessionStorage.getItem("currentRecords"));
+
     const tableBody = document.getElementById('data');
     let dataHTML = '';
 let newNum = 0;
 // Converts the data into a string and places into the variable dataHTML
-    for (let i of anythingArray){   
+    for (let i of test){   
         dataHTML += 
        `<tr>
             <td onclick="addperson()" id="NI${i}">${i.ninumber}</td>
@@ -37,8 +39,8 @@ let newNum = 0;
             <td><input type="button" value="Delete" onclick="deleteperson()"></td>
         </tr>`;
         }
-// console.log(dataHTML);
         tableBody.innerHTML = dataHTML;
+       
  
       
 };

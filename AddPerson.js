@@ -1,6 +1,8 @@
 
 function addperson(){
     
+var getRecords = JSON.parse(sessionStorage.getItem("currentRecords"));
+
     let ninumber1 = document.getElementById('1').value;
     let fullname1 = document.getElementById('2').value;
     let phone1 = document.getElementById('3').value;
@@ -23,10 +25,12 @@ function addperson(){
                 if (department1 == ""){
                     alert("Missing department");
                 }else {
-                    records.push({ninumber:ninumber1, fullname:fullname1,phone:phone1,address:address1,department:department1});
-                   currentRecords = records;
-				   document.location="HR_Application.html";
-                    alert("WORKING");
+                    getRecords.push({ninumber:ninumber1, fullname:fullname1,phone:phone1,address:address1,department:department1});
+                  
+                   document.location="Index.html";
+sessionStorage.setItem("currentRecords", JSON.stringify(getRecords));
+                   
+                    // alert("WORKING");
                 }
             }
         }
