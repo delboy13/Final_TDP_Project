@@ -8,11 +8,12 @@ let records = [
 ];
 
 
- 
+ // Sets the sessionStorage memory to hold records #DOES NOT CHANGE RECORDS
 var currentRecords = JSON.parse(sessionStorage.getItem("currentRecords"));
 if(currentRecords == null){
     sessionStorage.setItem("currentRecords", JSON.stringify(records));
 
-}
+};
+
 
 

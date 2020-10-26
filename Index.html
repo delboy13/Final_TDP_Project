@@ -6,6 +6,8 @@
     <script src="AddPerson.js"></script>
     <script src="delete.js"></script>
     <script src="Edit.js"></script>
+    <script src="singlePerson.js"></script>
+    <script src="search.js"></script>
 
     <link rel="stylesheet" href="Dwarf.css">
 </head>
@@ -23,15 +25,14 @@
 
     <input value="Add" type="button" onclick="document.location='addEmployee.html'">
     <br><br>
-    
-    <label>NI Number:</label> <input value="" id="1" type="text" autofocus >
+
+    <!-- <label>NI Number:</label> <input value="" id="1" type="text" autofocus >
     <label>Full Name:<input value="" id="2" type="text"></label>
     <label>Phone:<input value="" id="3" type="text"></label>
     <label>Adress:<input value=""  id="4"type="text"></label>
-    <label>Department:<input value="" id="5"type="text"></label>
+    <label>Department:<input value="" id="5"type="text"></label> -->
 
 </div>
-<!--Table of employee information-->
 <table class="center">
     <thead>
         <tr>
@@ -40,15 +41,28 @@
             <th>Phone</th>
             <th>Address</th>
             <th>Department</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody id="data">
             <td ></td>
  <!-- Calling the <tbody> data from records.js file-->
+    <!-- <tr>
+        <td id="NI${i}">${i.ninumber}</td>
+        <td id="fullname${i}">${i.fullname}</td>
+        <td id="phone${i}">${i.phone}</td>
+        <td id="address${i}">${i.address}</td>
+        <td id="department${i}">${i.department}</td>
+        <td><input id="edit${i}" type="button" value="Edit" onclick=document.location="Edit.html"></td>
+        <td><input id="delete${i} type="button" value="Delete" onclick="singlePerson()"></td>
+    </tr> -->
     </tbody>
 </table>
 
 
 </body>
+<!-- <script>console.log(sessionStorage.getItem("currentRecords"));</script> -->
+
 
 </html>
