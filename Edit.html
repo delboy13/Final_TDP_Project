@@ -3,14 +3,16 @@
     <script src="Records.js"></script> -->
      <script src="AddPerson.js"></script>
      <script src="search.js"></script>
+     
+     <script src="update.js"></script>
 <script>
 
 </script>
-//test git
+
 
 <body>
-   <label>Search Ni Number: <input type="text" value="1" id="searched" autofocus></label><br>
-   <input type="button" value="Search" onclick="editTest()">
+   <!-- <label>Search Ni Number: <input type="text" value="1" id="searched" autofocus></label><br> -->
+   <!-- <input type="button" value="Search" onclick="search()"> -->
    <br><br>
     <br>
 
@@ -20,26 +22,26 @@
             <th>Field</th>
             <th>data</th>
         </thead>
-        <tbody>
+        <tbody id="EDITBODY">
         <tr>
             <td><label>Ni Number:</td>
-            <td><input  value="" type="text"  id="1"></label><br><br></td>
+            <td><input  value="" type="text"  id="NI" readonly></label><br><br></td>
             </tr>
             <tr>
                 <td><label>Full Name:</td>
-                <td><input value="" type="text" id="2"></label><br><br></td>
+                <td><input value="" type="text" id="Name"></label><br><br></td>
                 </tr>
                 <tr>
                     <td><label>Phone:</td>
-                    <td><input value="" type="text" id="3"></label><br><br></td>
+                    <td><input value="" type="text" id="Phone"></label><br><br></td>
                     </tr>
                     <tr>
                         <td><label>Address:</td>
-                        <td><input value="" type="text" id="4"></label><br><br></td>
+                        <td><input value="" type="text" id="Address"></label><br><br></td>
                         </tr>
                         <tr>
                             <td><label>Department:</td>
-                            <td><input value="" type="text" id="5"></label><br></td>
+                            <td><input value="" type="text" id="Dept"></label><br></td>
                             </tr>
         <!-- <label>Full Name:<input value="" type="text" id="2"></label><br><br>
         <label>Phone:<input value="" type="text" id="3"></label><br><br>
@@ -50,7 +52,7 @@
     </tbody>
     </table>
     <br><br>
-    <input type="button" value="Update Employee" onclick="addperson()"><br><br>
+    <input type="button" value="Update Employee" onclick="update()"><br><br>
     <button onclick="document.location='Index.html'">View Employees</button>
     </div>
    

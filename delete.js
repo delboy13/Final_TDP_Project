@@ -9,6 +9,14 @@ function deleteperson(){
 document.location='Index.html';
 };
 
+// function DeleteMe(this){
+//     var popping = JSON.parse(sessionStorage.getItem("currentRecords"));
+//     var random = this;
+//     popping.splice(random);
+//     sessionStorage.setItem("currentRecords",JSON.stringify(popping) )
+
+// };
+
 
 
 

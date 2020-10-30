@@ -3,11 +3,11 @@ function addperson(){
     
 var getRecords = JSON.parse(sessionStorage.getItem("currentRecords"));
 
-    let ninumber1 = document.getElementById('1').value;
-    let fullname1 = document.getElementById('2').value;
-    let phone1 = document.getElementById('3').value;
-    let address1 = document.getElementById('4').value;
-    let department1 = document.getElementById('5').value;
+    const ninumber1 = document.getElementById('1').value;
+    const fullname1 = document.getElementById('2').value;
+    const phone1 = document.getElementById('3').value;
+    const address1 = document.getElementById('4').value;
+    const department1 = document.getElementById('5').value;
 
     if (ninumber1 == ""){
         alert("Missing NI Number");

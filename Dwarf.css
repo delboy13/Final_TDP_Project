@@ -1,3 +1,8 @@
+body
+{
+    background-color: rgb(112, 99, 112);
+}
+
 body {
 text-align: center;
     margin: auto;
@@ -34,7 +39,7 @@ padding: 10pt;
   }
 
   tr:hover {
-      background-color: black;
+      background-color: rgb(45, 243, 38);
       color: white;
   }
  
