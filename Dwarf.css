@@ -1,9 +1,16 @@
 body
 {
-    background-color: rgb(112, 99, 112);
+    background-color: #2D1E2F;
     text-align: center;
     margin: auto;
     
+}
+h1{
+color: #DD6031;
+padding-top: 10pt;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* body {
@@ -14,37 +21,61 @@ text-align: center;
 table {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-collapse: collapse;
-    width: 75%;  
+    width: 75%;
+    
+  
 }
-button.btn-1{
-   color: royalblue; 
+button{
+   color: #2B303A;
+   padding: 5pt;
+   border-style: groove;
+   border-radius:50pt;
+   border-width: 2pt;
+   font-weight: bold;
+   font-family: cursive;
+   background-color: #6D9F71;
 }
-th, td
+td
 {
-border: 1pt solid black;
-padding: 10pt;
+border: 2pt solid #ADA0A6;
+padding: 3pt;
+text-align: center;
  }
  th {
      font-weight: bold;
      text-transform: uppercase;
-     background-color: cadetblue;
+     background-color: #6153CC;
+     border: 2pt solid black;
+    padding: 10pt;
  }
 
  thead {
-     border: 5pt solid  black;
+     border: 4pt solid  black;
  }
 
  table.center {
     margin-left:auto; 
     margin-right:auto;
   }
-
+tr {
+    background-color: #FFC145;
+    
+}
   tr:nth-child(even){
-      background-color:#837f7f;
+      background-color:#47A8BD;
   }
 
   tr:hover {
-      background-color: rgb(45, 243, 38);
+      background-color:#F64740;
       color: white;
+  }
+  footer {
+      color: #DD6031;
+  }
+
+  input {
+      background-color: rgb(207, 236, 78);
+      font-weight: bolder;
+      font-style: normal;
   }
  

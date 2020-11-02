@@ -1,5 +1,5 @@
 <html>
-
+<link rel="stylesheet" href="Dwarf.css">
      <script src="AddPerson.js"></script>
      <script src="search.js"></script>     
      <script src="update.js"></script>
@@ -9,13 +9,14 @@
 
 
 <body>
+    <h1><u>Update Employee</u></h1>
    <!-- <label>Search Ni Number: <input type="text" value="1" id="searched" autofocus></label><br> -->
    <!-- <input type="button" value="Search" onclick="search()"> -->
    <br><br>
     <br>
 
 <div>
-    <table>
+    <table class="center">
         <thead>
             <th>Field</th>
             <th>data</th>
@@ -50,7 +51,9 @@
     </tbody>
     </table>
     <br><br>
-    <input type="button" value="Update Employee" onclick="update()"><br><br>
+    <button onclick="update()">Update Employee</button>
+        <br>
+        <br>
     <button onclick="document.location='Index.html'">View Employees</button>
     </div>
    
