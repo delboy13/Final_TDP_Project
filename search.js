@@ -43,28 +43,7 @@ for (let i of employees){
     document.getElementById('Dept').value=i.department;
 
 
-//         var dataHTML =
-//    `<tr>
-//         <td >NI Number: </td>
-//         <td id="NI${i}" ><input type="text" value="${NiNumber}"></td>
-//         </tr>
-//         <tr>
-//         <td >Name: </td>
-//         <td id="NI${i}"s><input type="text" value="${FullName}"></td>
-//         </tr>
-//         <td >Phone: </td>
-//         <td id="NI${i}" ><input type="text" value="${Phone}"></td>
-//         </tr>
-//         <td >Address: </td>
-//         <td id="NI${i}" ><input type="text" value="${Address}"></td>
-//         </tr>
-//         <td >Department: </td>
-//         <td id="NI${i}"><input type="text" value="${Department}"></td>
-// //         </tr>`
-//     ;
-    
-//     tableBody.innerHTML = dataHTML;
-    }
+        }
 
-}
+    }
 };

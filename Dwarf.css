@@ -13,18 +13,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-/* body {
-text-align: center;
-    margin: auto;
-    
-} */
-table {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-    
-  
-}
+
+/* BUTTONS################ */
 button{
    color: #2B303A;
    padding: 5pt;
@@ -35,22 +25,48 @@ button{
    font-family: cursive;
    background-color: #6D9F71;
 }
-td
-{
-border: 2pt solid #ADA0A6;
-padding: 3pt;
-text-align: center;
+
+button.adding2{
+    color: #2B303A;
+    padding: 5pt;
+    border-style: groove;
+    border-radius:50pt;
+    border-width: 2pt;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: hsl(0, 87%, 51%);
+ }
+ button.adding3{
+    color: #2B303A;
+    padding: 5pt;
+    border-style: groove;
+    border-radius:50pt;
+    border-width: 2pt;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: hsl(61, 87%, 55%);
+ }
+/* YABLE ############################################ */
+ table {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+}
+td {
+    border: 2pt solid #ADA0A6;
+    padding: 3pt;
+    text-align: center;
  }
  th {
-     font-weight: bold;
-     text-transform: uppercase;
-     background-color: #6153CC;
-     border: 2pt solid black;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #6153CC;
+    border: 2pt solid black;
     padding: 10pt;
  }
 
  thead {
-     border: 4pt solid  black;
+    border: 4pt solid  black;
  }
 
  table.center {
@@ -69,13 +85,14 @@ tr {
       background-color:#F64740;
       color: white;
   }
-  footer {
-      color: #DD6031;
-  }
-
   input {
       background-color: rgb(207, 236, 78);
       font-weight: bolder;
       font-style: normal;
   }
+
+  /* FOOTER########## */
+  footer {
+    color: #DD6031;
+}
  
