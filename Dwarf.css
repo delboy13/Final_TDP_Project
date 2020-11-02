@@ -1,19 +1,24 @@
 body
 {
     background-color: rgb(112, 99, 112);
-}
-
-body {
-text-align: center;
+    text-align: center;
     margin: auto;
     
 }
+
+/* body {
+text-align: center;
+    margin: auto;
+    
+} */
 table {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;  
+    width: 75%;  
 }
-
+button.btn-1{
+   color: royalblue; 
+}
 th, td
 {
 border: 1pt solid black;
@@ -42,5 +47,4 @@ padding: 10pt;
       background-color: rgb(45, 243, 38);
       color: white;
   }
- 
  

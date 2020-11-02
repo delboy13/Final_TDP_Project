@@ -1,4 +1,5 @@
 
+
 function deleteperson(){
     JSON.parse(sessionStorage.getItem("currentRecords"));
     erased = [];
@@ -9,41 +10,77 @@ function deleteperson(){
 document.location='Index.html';
 };
 
-// function DeleteMe(this){
-//     var popping = JSON.parse(sessionStorage.getItem("currentRecords"));
-//     var random = this;
-//     popping.splice(random);
-//     sessionStorage.setItem("currentRecords",JSON.stringify(popping) )
+// function DeleteMe(){
+//     var Records = JSON.parse(sessionStorage.getItem("currentRecords"));
+//     Records[1]={};
+//     sessionStorage.setItem('currentRecords', JSON.stringify(Records))
+//     // if (true){
+//     //     findinArray;
+//     //     deleteinArray;
+//     //     sessionStorage.setItem('currentRecords', JSON.stringify(Records))
+// };
 
+// ###################################################
+// onlclick delete kknow which one clicked id eg
+// alert is this correct - confirmatipon box?
+// in box are  you sure delete this person
+// pass data from onlick to populate box
+// if yes => find person in array
+// delete person in array
+// refresh table
+//#############################################
+
+
+
+
+
+// function DeleteMe(){
+//     var Records = JSON.parse(sessionStorage.getItem("currentRecords"));
+//     Records[1]={};
+//     sessionStorage.setItem('currentRecords', JSON.stringify(Records))
+//     // if (true){
+//     //     findinArray;
+//     //     deleteinArray;
+//     //     sessionStorage.setItem('currentRecords', JSON.stringify(Records))
 // };
 
 
 
 
-
-
-// function loadEmployeeTable() {   
-
-//     var test1 = JSON.parse(sessionStorage.getItem("currentRecords"));
-    
-//         const tableBody = document.getElementById('data');
-//         let dataHTML = '';
-    
-//     // Converts the data into a string and places into the variable dataHTML
-//         for (let i of test1){ 
-//             if(search =)  
-//             dataHTML += 
-//                `<tr>
-//                 <td id="NI${i}">${i.ninumber}</td>
-//                 <td id="fullname${i}">${i.fullname}</td>
-//                 <td id="phone${i}">${i.phone}</td>
-//                 <td id="address${i}">${i.address}</td>
-//                 <td id="department${i}">${i.department}</td>
-//                 <td><input id="edit${i}" type="button" value="Edit" onclick=document.location="Edit.html"></td>
-//                 <td><input id="Edit${i}" type="button" value="Edit" onclick="singlePerson(this)"></td>
-//                 <td><input id="delete${i} type="button" value="Delete" onclick="deleteperson()"></td>
-//             </tr>`;
-//             }
-//             tableBody.innerHTML = dataHTML;
-            
+// //######################/
+// function edit(dwarf)
+//     {
+//     document.location="Index.html?id="+dwarf.id;  
 //     };
+// //######################Gets ID VALUE OF OBJECT this?
+// var id;
+// function URLQueury(){
+    
+//     const urlParams = new URLSearchParams(window.location.search);
+//     id = urlParams.get('id');
+// };
+// //######################//######################
+// function DeleteMe(){
+//     var getRecords = JSON.parse(sessionStorage.getItem("currentRecords"));
+  
+
+
+// //finds index  
+//               var result =  findWithAttr(getRecords, "ninumber", ninumber);
+//               getRecords.splice(result,1);
+//               sessionStorage.setItem('currentRecords', JSON.stringify(getRecords));
+
+
+// //######################//######################
+
+
+
+
+function findWithAttr(array, attr, value) {
+    for(var i = 0; i < array.length; i += 1) {
+        if(array[i][attr] === value) {
+            return i;
+        }
+    }
+    return -1;
+            };

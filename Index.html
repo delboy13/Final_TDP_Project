@@ -1,30 +1,22 @@
 <html>
-    <!--Referencing to my Css and Javascript functions + Records.-->
 <head>
-	<script src="data.js"></script>
-    <script src="Records.js"></script>
-    <script src="AddPerson.js"></script> 
- 
-    <script src="delete.js"></script>
-    <script src="Edit.js"></script>
- 
-
     <link rel="stylesheet" href="Dwarf.css">
+
+        <script src="data.js"></script>
+        <script src="Records.js"></script>
+        <script src="AddPerson.js"></script> 
+        <script src="delete.js"></script>
+        <script src="update.js"></script>
+    
+
 </head>
-
-
-<body>
-<!-- HEADING -->
-    <h1><u>HR Application Project</u></h1><br>
-    <h2>Employee Table</h2><br>
-<!-- DELETE & ADD BUTTONS -->
+    <body class="body">
+<h1><u>TDP - FINAL PROJECT</u></h1><br>
 <div>
-    <input type="button" onclick=deleteperson() value="DELETE ALL RECORDS!">
-<br><br>
-
-    <input value="Add" type="button" onclick="document.location='addEmployee.html'">
-<br><br>
+    <!-- <input type="button" onclick=deleteperson() value="DELETE ALL RECORDS!"><br><br> -->
+    <input value="Add" type="button" onclick="document.location='addEmployee.html'"><br><br>
 </div>
+
 <table class="center">
     <thead>
         <tr>
@@ -37,18 +29,14 @@
             <th>Delete</th>
         </tr>
     </thead>
-    <tbody id="data">
-        <!-- <tr> -->
-        <!-- <td > data</td> * 7-->
-        <!-- </tr> -->
-                <!-- <tr> -->
-                <!-- <td > data</td> * 7-->
-                <!-- </tr> -->
-    </tbody>
+
+<tbody id="data">
+</tbody>
 </table>
 
 
 </body>
+<br><br>
 <footer>Copyright @ UpSideDownyHead</footer>
 
 
