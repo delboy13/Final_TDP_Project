@@ -14,6 +14,7 @@ function loadEmployeeTable() {
             <td >${i.phone}</td>
             <td >${i.address}</td>
             <td >${i.department}</td>
+            
             <td><button id="${i.ninumber}" onclick="edit(this)">Edit</button></td>
             <td><button data-ninumber="${i.ninumber}" id="delete${i.ninumber}" onclick="DeleteMe(this)">Delete</button></td>
         </tr>`;
@@ -53,7 +54,7 @@ function myFunction() {
             
 // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
+        td = tr[i].getElementsByTagName("td")[4];
             if (td) {
                 txtValue = td.textContent || td.innerText;
                   if (txtValue.toUpperCase().indexOf(filter) > -1) {
